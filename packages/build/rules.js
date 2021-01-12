@@ -72,11 +72,6 @@ const style = {
   })
 }
 
-const pug = () => ({
-  test: /\.pug$/,
-  loader: 'pug-plain-loader'
-})
-
 const fonts = prefix => ({
   test: /\.(eot|svg|ttf|woff|woff2)$/,
   loader: 'file-loader',
@@ -111,7 +106,6 @@ module.exports = {
   javascript,
   images,
   fonts,
-  pug,
   mustache,
   handlebars,
   url,
